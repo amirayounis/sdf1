@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form style="width: 50%;margin: 20px;" method="post" action="add.php" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" name="pass" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="file" name="pic" >
+          </div>
+          <div class="form-check">
+            <input name="hoppies[]" class="form-check-input" type="checkbox" value="reading" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             reading
+            </label>
+          </div>
+          <div class="form-check">
+            <input name="hoppies[]" class="form-check-input" type="checkbox" value="pcgames" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              pcgames
+            </label>
+          </div>
+          <div class="form-check">
+            <input name="hoppies[]" class="form-check-input" type="checkbox" value="cooking" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              cooking
+            </label>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>
